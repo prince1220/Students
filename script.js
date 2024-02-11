@@ -22,6 +22,10 @@ formEl.addEventListener("submit",(event)=>{
             grade:grade
         }
     )
+ 
+  const average = array => array.reduce((a, b) => a*1+b*1,0)/ array.length;
+  
+averageEl.innerHTML=(average(students.map(item=>item.grade)));
 
 tableEl.innerHTML +=`
 <tr>
