@@ -27,6 +27,18 @@ formEl.addEventListener("submit",(event)=>{
   
 averageEl.innerHTML=(average(students.map(item=>item.grade)));
 
+///make highest / lowest work
+
+
+
+const numbers = [, 35, 65, 95];
+const minValue = Math.min(...numbers);
+const maxValue = Math.max(...numbers);
+
+console.log(`Minimum value is ${minValue} and maximum value is ${maxValue}`);
+
+
+
 tableEl.innerHTML +=`
 <tr>
 <td>${firstName}</td>
